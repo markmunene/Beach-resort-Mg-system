@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/css/App.ss">
+    
+
+ 
+    </style>
+</head>
+<body>
+    <!-- <iframe id="HtmlIFrame" src="./Navbar.html" style="width:100vw ; display: grid;place-items: center;overflow: hidden;"  seamless></iframe>
+     -->
+     <%- include('Navbar') %>
+        <header class="defaultHero">
+            <div class="banner">
+            <h1>luxurious Listings</h1>
+            <div> </div>
+            <p>deluxe Listings starting at $299</p>
+           <a href="/roomCategory" class="btn-primary">More</a>
+          </div>
+             
+        </header>
+        <section class="services">
+            <div class="section-title">
+                <h4>services</h4>
+            <div> </div>
+              </div>
+            
+              <div class="services-center" id="services-center-container">
+                    <article class="service">
+                        <span class="icon">
+                            <i class="fa fa-beer"></i>
+                        </span>
+                        <h6>free cocktails</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                     
+                    </article>
+                    <article class="service">
+                        <span class="icon">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <h6>endless hiking</h6>
+                        <p> 
+                            hiking Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+
+                        </p>
+                      </article>
+                    <article class="service">
+                        <span class="icon">
+                            <i class="fa fa-car"></i>
+                        </span>
+                        <h6>free shuttle</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                        </article>
+                      
+              </div>
+        </section>
+        <section class="featured-rooms">
+                <div class="section-title">
+                    <h4>featured Listings</h4>
+                    <div> </div>
+                  </div>
+            
+        <div class="featured-rooms-center">
+        
+        <% rooms.map((room) => { %>
+
+            <% if(room != undefined) { %>
+
+            <article class="room">
+                <div class="img-container">
+                    <img src="<%= `/uploadedImages/${room?.roomImage[0]}` %>" alt="single room">
+                    <div class="price-top">
+                        <h6>$<%= room?.roomPrice %></h6>
+                        <p>per night</p>
+                    </div>
+                    <a href="<%= `/roomCategory/getRoomCategory/${room?.id}` %>" class="btn-primary room-link">Features</a>
+                </div>
+                <p class="room-info"><%= room?.roomType %></p>
+            </article>
+            <% } %>
+        <% }) %>
+        </div>
+        </section>
+   
+<%- include('Footer') %>
+</body>
+</html>

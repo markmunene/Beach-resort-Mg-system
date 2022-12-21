@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>singleRoom</title>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./App.css">
+<style>
+ 
+    .booking-details-container
+    {
+       
+        width: 80vw ;
+  margin: 0 auto ;
+  display: grid ;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)) ;
+  grid-row-gap: 2rem ;
+  grid-column-gap: 40px ;
+    }
+
+</style>
+
+</head>
+<body>
+    <iframe id="HtmlIFrame" src="./Navbar.html" style="width:100vw ; display: grid;place-items: center;overflow: hidden;"  seamless></iframe>
+ 
+    <div class="row">
+        <div class="col-md-10">
+            <!-- booking details -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Booking Details</h2>
+
+                </div>
+                <div class="card-body booking-details-container">
+                    <div class="booking-details-content">
+                        <div class="booking-details-content-left">
+                            <h3>Check In</h3>
+                            <p>2021-08-01</p>
+                        </div>
+                        <div class="booking-details-content-right">
+                            <h3>Check Out</h3>
+                            <p>2021-08-02</p>
+                        </div>
+                    </div>
+                    <div class="booking-details-content">
+                        <div class="booking-details-content-left">
+                            <h3>Adults</h3>
+                            <p>2</p>
+                        </div>
+                        <div class="booking-details-content-right">
+                            <h3>Children</h3>
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div class="booking-details-content">
+                        <div class="booking-details-content-left">
+                            <h3>Room Type</h3>
+                            <p>Single Room</p>
+                        </div>
+                        <div class="booking-details-content-right">
+                            <h3>Room Price</h3>
+                            <p>$299</p>
+                        </div>
+                    </div>
+                    <div class="booking-details-content">
+                        <div class="booking-details-content-left">
+                            <h3>Room Number</h3>
+                            <p>101</p>
+                        </div>
+                        <div class="booking-details-content-right">
+                            <h3>Room Size</h3>
+                            <p>300 sqft</p>
+                        </div>
+                    </div>
+                    <div class="booking-details-content">
+                        <div class="booking-details-content-left">
+                            <h3>Bed Type</h3>
+                            <p>1 King Bed</p>
+                        </div>
+                        <div class="booking-details-content-right">
+                            <h3>Max Capacity</h3>
+                            <p>2 Adults</p>
+                        </div>
+                    </div>
+                    <div class="booking-details-content">
+                        <div class="booking-details-content-left">
+                            <h3>Breakfast</h3>
+                            <p>Included</p>
+                        </div>
+                        <div class="booking-details-content-right">
+                            <h3>Free Cancellation</h3>
+                            <p>Until 2021-07-31</p>
+                        
+    
+                        </div>
+    
+                    </div>
+                </div>
+
+            </div>
+                
+        </div>
+        <div class="col-md-1">
+            <!-- <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center">confirm payment</h3>
+                </div>
+                <div class="card-body">
+                    <form action="payment.html" method="POST">
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber" name="cardNumber" placeholder="Enter Card Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="cardHolderName">Card Holder Name</label>
+                            <input type="text" class="form-control" id="cardHolderName" name="cardHolderName" placeholder="Enter Card Holder Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="cardExpiryDate">Card Expiry Date</label>
+                            <input type="date" class="form-control" id="cardExpiryDate" name="cardExpiryDate" placeholder="Enter Card Expiry Date">
+                        </div>
+                        <div class="form-group">
+                            <label for="cardCVV">Card CVV</label>
+                            <input type="text" class="form-control" id="cardCVV" name="cardCVV" placeholder="Enter Card CVV">
+                        </div>
+                        <div class="form-group">
+                            <label for="cardAmount">Card Amount</label>
+                            <input type="text" class="form-control" id="cardAmount" name="cardAmount" placeholder="Enter Card Amount">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+            </div>
+            
+        </div> -->
+
+        </div>
+    </div>
+
+    <iframe id="HtmlIFrame" src="./Footer.html" style="width:100vw ; height: 35vh; "  seamless></iframe>
+
+    
+</body>
+</html>
